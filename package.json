@@ -2,9 +2,13 @@
   "name": "@paralympics/protogen-ts",
   "version": "1.0.0",
   "description": "Proto Database",
-  "main": "./codegen/ts/",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "npm run test"
+    "build": "npm run build",
+    "test": "NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
