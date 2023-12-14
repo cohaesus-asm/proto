@@ -7,7 +7,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build",
+    "build": "tsc -d",
+    "prepublish": "npm run build",
     "test": "NODE_ENV=test jest"
   },
   "repository": {
