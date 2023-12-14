@@ -2,7 +2,7 @@
   "name": "proto-codegen-ts",
   "version": "1.0.0",
   "description": "Proto Database",
-  "main": "./codegen/ts/articles/v1/article_grpc_pb.js",
+  "main": "./codegen/ts/articles/v1/article_pb.js",
   "scripts": {
     "test": "npm run test"
   },
