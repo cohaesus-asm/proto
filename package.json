@@ -2,10 +2,7 @@
   "name": "@paralympics/protogen-ts",
   "version": "1.0.0",
   "description": "Proto Database",
-  "main": "codegen/ts",
-  "files": [
-    "codegen/ts"
-  ],
+  "main": "articles/v1/article_pb.js",
   "scripts": {
     "test": "NODE_ENV=test"
   },
