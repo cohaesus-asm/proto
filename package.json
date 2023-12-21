@@ -2,7 +2,7 @@
   "name": "@paralympics/protogen-ts",
   "version": "1.0.0",
   "description": "Proto Database",
-  "main": "auth/v1/admin_pb.js",
+  "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test"
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/cohaesus-asm/proto/issues"
   },
-  "homepage": "https://github.com/cohaesus-asm/proto#readme"
+  "homepage": "https://github.com/cohaesus-asm/proto#readme",
+  "dependencies": {
+    "grpc": "^1.24.11"
+  }
 }
