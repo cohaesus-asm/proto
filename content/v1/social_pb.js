@@ -195,8 +195,7 @@ proto.paralympics.content.v1.SocialProfile.prototype.setId = function(value) {
 proto.paralympics.content.v1.SocialNetwork = {
   FACEBOOK: 0,
   TWITTER: 1,
-  INSTAGRAM: 2,
-  TIKTOK:3
+  INSTAGRAM: 2
 };
 
 goog.object.extend(exports, proto.paralympics.content.v1);

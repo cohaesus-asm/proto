@@ -31,7 +31,6 @@ export interface SocialNetworkMap {
   FACEBOOK: 0;
   TWITTER: 1;
   INSTAGRAM: 2;
-  TIKTOK: 3;
 }
 
 export const SocialNetwork: SocialNetworkMap;
