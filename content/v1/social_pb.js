@@ -113,6 +113,10 @@ proto.paralympics.content.v1.SocialProfile.deserializeBinaryFromReader = functio
       var value = /** @type {string} */ (reader.readString());
       msg.setId(value);
       break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setId(value);
+      break;
     default:
       reader.skipField();
       break;
@@ -186,6 +190,19 @@ proto.paralympics.content.v1.SocialProfile.prototype.getId = function() {
 /** @param {string} value */
 proto.paralympics.content.v1.SocialProfile.prototype.setId = function(value) {
   jspb.Message.setProto3StringField(this, 2, value);
+};
+
+/**
+ * optional string id = 3;
+ * @return {string}
+ */
+proto.paralympics.content.v1.SocialProfile.prototype.getId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+};
+
+/** @param {string} value */
+proto.paralympics.content.v1.SocialProfile.prototype.setId = function(value) {
+  jspb.Message.setProto3StringField(this, 3, value);
 };
 
 
