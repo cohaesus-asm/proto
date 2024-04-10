@@ -68,7 +68,7 @@ proto.paralympics.content.v1.SocialProfile.prototype.toObject = function(opt_inc
 proto.paralympics.content.v1.SocialProfile.toObject = function(includeInstance, msg) {
   var f, obj = {
     network: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    id: jspb.Message.getFieldWithDefault(msg, 3, "")
+    id: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
   if (includeInstance) {
