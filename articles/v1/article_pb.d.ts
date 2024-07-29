@@ -833,9 +833,10 @@ export const ErrorCode: ErrorCodeMap;
 
 export interface CategoryMap {
   NONE: 0;
-  IMPACT_SOCIAL_IMPACT: 1;
-  IMPACT_PARTNER: 3;
-  IMPACT_PHILANTHROPY: 4;
+  SUPPORT_FUNDRAISING: 1;
+  SUPPORT_EVENTS: 2;
+  SUPPORT_CORPORATE: 3;
+  SUPPORT_GIFTS: 4;
 }
 
 export const Category: CategoryMap;
