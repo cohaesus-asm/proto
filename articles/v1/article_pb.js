@@ -5907,10 +5907,9 @@ proto.paralympics.articles.v1.ErrorCode = {
  */
 proto.paralympics.articles.v1.Category = {
   NONE: 0,
-  SUPPORT_FUNDRAISING: 1,
-  SUPPORT_EVENTS: 2,
-  SUPPORT_CORPORATE: 3,
-  SUPPORT_GIFTS: 4
+  IMPACT_SOCIAL_IMPACT: 1,
+  IMPACT_PARTNER: 3,
+  IMPACT_PHILANTHROPY: 4
 };
 
 goog.object.extend(exports, proto.paralympics.articles.v1);
