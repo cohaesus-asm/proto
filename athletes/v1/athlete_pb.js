@@ -1052,7 +1052,8 @@ proto.paralympics.athletes.v1.Athlete.toObject = function(includeInstance, msg) 
     imgProfile: (f = msg.getImgProfile()) && content_v1_content_pb.Image.toObject(includeInstance, f),
     imgHero: (f = msg.getImgHero()) && content_v1_content_pb.Image.toObject(includeInstance, f),
     imgHeroAlt: jspb.Message.getFieldWithDefault(msg, 13, ""),
-    featured: jspb.Message.getBooleanFieldWithDefault(msg, 14, false)
+    featured: jspb.Message.getBooleanFieldWithDefault(msg, 14, false),
+    address: jspb.Message.getFieldWithDefault(msg, 15, "")
   };
 
   if (includeInstance) {
@@ -1151,6 +1152,10 @@ proto.paralympics.athletes.v1.Athlete.deserializeBinaryFromReader = function(msg
     case 14:
       var value = /** @type {boolean} */ (reader.readBool());
       msg.setFeatured(value);
+      break;
+    case 15:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setAddress(value);
       break;
     default:
       reader.skipField();
@@ -1283,6 +1288,13 @@ proto.paralympics.athletes.v1.Athlete.serializeBinaryToWriter = function(message
   if (f) {
     writer.writeBool(
       14,
+      f
+    );
+  }
+  f = message.getAddress();
+  if (f.length > 0) {
+    writer.writeString(
+      15,
       f
     );
   }
@@ -1623,6 +1635,21 @@ proto.paralympics.athletes.v1.Athlete.prototype.getFeatured = function() {
 /** @param {boolean} value */
 proto.paralympics.athletes.v1.Athlete.prototype.setFeatured = function(value) {
   jspb.Message.setProto3BooleanField(this, 14, value);
+};
+
+
+/**
+ * optional string address = 15;
+ * @return {string}
+ */
+proto.paralympics.athletes.v1.Athlete.prototype.getAddress = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 15, ""));
+};
+
+
+/** @param {string} value */
+proto.paralympics.athletes.v1.Athlete.prototype.setAddress = function(value) {
+  jspb.Message.setProto3StringField(this, 15, value);
 };
 
 
@@ -5661,7 +5688,8 @@ proto.paralympics.athletes.v1.Field = {
   ATHLETECLASS: 5,
   ATHLETEIMGPROFILE: 6,
   ATHLETEHERO: 7,
-  ATHLETEHEROALT: 8
+  ATHLETEHEROALT: 8,
+  ATHLETEADDRESS: 9
 };
 
 /**

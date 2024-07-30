@@ -112,6 +112,9 @@ export class Athlete extends jspb.Message {
   getFeatured(): boolean;
   setFeatured(value: boolean): void;
 
+  getAddress(): string;
+  setAddress(value: string): void;
+
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Athlete.AsObject;
   static toObject(includeInstance: boolean, msg: Athlete): Athlete.AsObject;
@@ -138,6 +141,7 @@ export namespace Athlete {
     imgHero?: content_v1_content_pb.Image.AsObject,
     imgHeroAlt: string,
     featured: boolean,
+    address: string,
   }
 }
 
@@ -759,6 +763,7 @@ export interface FieldMap {
   ATHLETEIMGPROFILE: 6;
   ATHLETEHERO: 7;
   ATHLETEHEROALT: 8;
+  ATHLETEADDRESS: 9;
 }
 
 export const Field: FieldMap;
